@@ -40,6 +40,7 @@ enum class Binding(val key: String, val packageName: String) {
 	JAWT("binding.jawt", "org.lwjgl.system.jawt"),
 	NANOVG("binding.nanovg", "org.lwjgl.nanovg"),
 	NFD("binding.nfd", "org.lwjgl.util.nfd"),
+	ODBC("binding.odbc", "org.lwjgl.odbc"),
 	OPENAL("binding.openal", "org.lwjgl.openal"),
 	OPENCL("binding.opencl", "org.lwjgl.opencl"),
 	OPENGL("binding.opengl", "org.lwjgl.opengl"),

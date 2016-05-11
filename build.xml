@@ -265,6 +265,7 @@ License terms: http://lwjgl.org/license.php
 			<include name="org/lwjgl/egl/**" if:true="${binding.egl}"/>
 			<include name="org/lwjgl/glfw/**" if:true="${binding.glfw}"/>
 			<include name="org/lwjgl/nanovg/**" if:true="${binding.nanovg}"/>
+			<include name="org/lwjgl/odbc/**" if:true="${binding.odbc}"/>
 			<include name="org/lwjgl/openal/**" if:true="${binding.openal}"/>
 			<include name="org/lwjgl/opencl/**" if:true="${binding.opencl}"/>
 			<include name="org/lwjgl/opengl/**" if:true="${binding.opengl}"/>
@@ -384,6 +385,7 @@ License terms: http://lwjgl.org/license.php
 
 			<include name="org/lwjgl/demo/opengl/**" if:true="${binding.glfw}"/>
 
+			<include name="org/lwjgl/demo/odbc/**" if:true="${binding.odbc}"/>
 			<include name="org/lwjgl/demo/ovr/**" if:true="${binding.ovr}"/>
 			<include name="org/lwjgl/demo/stb/**" if:true="${stb_glfw}"/>
 
