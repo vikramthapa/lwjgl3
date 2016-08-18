@@ -15,7 +15,7 @@ import static org.lwjgl.system.MemoryUtil.*;
 @State(Scope.Benchmark)
 public class MemSetTest {
 
-	private static long m = nmemCalloc(1, 2048) + 1;
+	private static long m = nmemCalloc(1, 1024);
 
 	private static byte[] a = new byte[1024];
 
@@ -24,6 +24,7 @@ public class MemSetTest {
 
 	@Benchmark
 	public void memset() {
+		// NOTE: Make MemoryAccess.MemoryAccessorUnsafe.memSet call only UNSAFE.setMemory before testing
 		memSet(m, 0, length);
 	}
 

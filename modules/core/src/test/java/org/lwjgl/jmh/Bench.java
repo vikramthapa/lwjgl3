@@ -17,6 +17,8 @@ public final class Bench {
 	private Bench() {
 	}
 
+	// Run with:
+	//     ant demo -Dclass=org.lwjgl.jmh.Bench -Dargs=<regex>
 	public static void main(String[] args) throws RunnerException {
 		if ( args.length == 0 )
 			throw new IllegalArgumentException("Please specify the benchmark include regex.");

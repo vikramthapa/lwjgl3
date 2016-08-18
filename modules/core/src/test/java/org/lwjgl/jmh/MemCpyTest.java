@@ -23,6 +23,7 @@ public class MemCpyTest {
 
 	@Benchmark
 	public void memCopy() {
+		// NOTE: Make MemoryAccess.MemoryAccessorUnsafe.memCopy call only UNSAFE.copyMemory before testing
 		MemoryUtil.memCopy(f, t, length);
 	}
 
